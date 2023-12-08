@@ -49,7 +49,10 @@ data = data.drop_duplicates()
 
 # COMMAND ----------
 
-selected_columns = ['time', 'site_details_approximate_latitude', 'site_details_approximate_longitude', 'pm2_5_value']
+selected_columns = ['time', 'site_details_district','site_details_sub_county' , 'site_details_approximate_latitude', 'site_details_approximate_longitude', 'pm2_5_value']
 final_ml_data = data[selected_columns]
 final_ml_data=spark.createDataFrame(final_ml_data) 
-final_ml_data.write.mode("overwrite").csv(OUTPUT_FILE_LOCATION)
+final_ml_data.write \
+    .mode("overwrite") \
+    .option("header", "true") \
+    .csv(OUTPUT_FILE_LOCATION)
