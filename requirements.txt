@@ -1,2 +1,6 @@
 requests
 psycopg2
+fastapi
+pydantic
+pandas
+uvicorn

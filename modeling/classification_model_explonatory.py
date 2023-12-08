@@ -64,7 +64,7 @@ accuracy_score(y_test, y_pred)
 
 # save the model
 import pickle
-pickle.dump(model, open("rf_model.pkl", "wb"))
-pickle.dump(label_encoder_district, open("label_encoder_district.pkl", "wb"))
-pickle.dump(label_encoder_sub_county, open("label_encoder_sub_county.pkl", "wb"))
-pickle.dump(label_encoder_air_quality, open("label_encoder_air_quality.pkl", "wb"))
+pickle.dump(model, open("../../app/rf_model.pkl", "wb"))
+pickle.dump(label_encoder_district, open("../../app/label_encoder_district.pkl", "wb"))
+pickle.dump(label_encoder_sub_county, open("../../app/label_encoder_sub_county.pkl", "wb"))
+pickle.dump(label_encoder_air_quality, open("../../app/label_encoder_air_quality.pkl", "wb"))
