@@ -39,10 +39,12 @@ data_pd.head()
 # COMMAND ----------
 
 from sklearn.preprocessing import LabelEncoder
-label_encoder = LabelEncoder()
-data_pd["site_details_district"] = label_encoder.fit_transform(data_pd["site_details_district"])
-data_pd["site_details_sub_county"] = label_encoder.fit_transform(data_pd["site_details_sub_county"])
-data_pd["air_quality"] = label_encoder.fit_transform(data_pd["air_quality"])
+label_encoder_district = LabelEncoder()
+label_encoder_sub_county = LabelEncoder()
+label_encoder_air_quality = LabelEncoder()
+data_pd["site_details_district"] = label_encoder_district.fit_transform(data_pd["site_details_district"])
+data_pd["site_details_sub_county"] = label_encoder_sub_county.fit_transform(data_pd["site_details_sub_county"])
+data_pd["air_quality"] = label_encoder_air_quality.fit_transform(data_pd["air_quality"])
 
 # COMMAND ----------
 
@@ -63,3 +65,6 @@ accuracy_score(y_test, y_pred)
 # save the model
 import pickle
 pickle.dump(model, open("rf_model.pkl", "wb"))
+pickle.dump(label_encoder_district, open("label_encoder_district.pkl", "wb"))
+pickle.dump(label_encoder_sub_county, open("label_encoder_sub_county.pkl", "wb"))
+pickle.dump(label_encoder_air_quality, open("label_encoder_air_quality.pkl", "wb"))
