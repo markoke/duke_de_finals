@@ -1,11 +1,13 @@
-FROM python:3.11-alpine
+FROM python:3.10.12
 
-WORKDIR /airqo
+COPY ./requirements.txt /app/requirements.txt
 
-COPY ./requirements.txt /airqo/requirements.txt
+WORKDIR /app
 
-RUN pip install --no-cache-dir --upgrade -r /airqo/requirements.txt
+RUN pip install -r requirements.txt
 
-COPY ./app /airqo/app
+COPY app/* /app
 
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8080"]
+ENTRYPOINT [ "uvicorn" ]
+
+CMD ["main:app", "--host", "0.0.0.0", "--port", "8008"]
