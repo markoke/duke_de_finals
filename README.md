@@ -55,3 +55,6 @@ We also observed the cluster compute resource utilization during the load test a
 ## Infrastructure As Code 
 we opted for Azure Container App as our preferred platform for deploying the application. This choice was driven by several factors, including the simplicity and flexibility offered by Azure Container App in managing containerized applications. Leveraging Azure Container App's declarative approach to IaC allowed us to define and configure the entire deployment infrastructure in code, ensuring consistency and reproducibility. Additionally, Azure Container App seamlessly integrates with other Azure services, providing a cohesive environment for our application. This strategic use of IaC streamlines deployment processes, enhances scalability, and aligns with best practices for managing and maintaining our application's infrastructure.
 
+## Utlisation Of AI Tool
+Copilot was my prefered tool of choice for autocompletion and code suggestions on my Pycharm IDE. 
+
