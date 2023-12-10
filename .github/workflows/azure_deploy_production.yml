@@ -20,6 +20,3 @@ jobs:
           with:
             appSourcePath: ${{ github.workspace }}
             acrName: deairqo
-            acrUsername: ${{ secrets.REGISTRY_USERNAME }}
-            acrPassword: ${{ secrets.REGISTRY_PASSWORD }}
-            containerAppName: de-airqo

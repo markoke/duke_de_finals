@@ -38,7 +38,6 @@ df_pd = pd.DataFrame(rows, columns=columns)
 
 # COMMAND ----------
 
-# Flatten the json columns
 pm2_5_df = json_normalize(df_pd['pm2_5'])
 pm2_5_df.columns = [f'pm2_5_{col}' for col in pm2_5_df.columns]
 site_details_df = json_normalize(df_pd['site_details'])
