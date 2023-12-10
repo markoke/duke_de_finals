@@ -46,10 +46,7 @@ DockerHub with GitHub Actions:
 For broader accessibility and compatibility, our models and microservices were also packaged using DockerHub. GitHub Actions played a crucial role in automating the containerization process, ensuring a streamlined and efficient deployment workflow. This dual approach provides flexibility in deployment options while maintaining accessibility and ease of integration.
 
 ## Load test
-Our application successfully withstood the load of 10,000 requests per second during rigorous testing with Locust, showcasing its robustness and scalability. With zero failures observed, this outcome instills confidence in the application's reliability under high-demand scenarios. Continuous monitoring will be a priority to uphold optimal performance as we move forward.
-![plot2](assets/locust.png)
-
-We also observed the cluster compute resource utilization during the load test as shown below
+Our application successfully withstood the load of 10,000 requests per second during rigorous testing with Locust, showcasing its robustness and scalability. With zero failures observed when the compute was increased, this outcome instills confidence in the application's reliability under high-demand scenarios. Continuous monitoring will be a priority to uphold optimal performance as we move forward. We also observed the cluster compute resource utilization during the load test as shown below
 ![plot2](assets/compute.png)
 
 ## Infrastructure As Code 
