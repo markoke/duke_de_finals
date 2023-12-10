@@ -1,5 +1,6 @@
 # Data Engineering Final Project 
-
+[![Push to Docker Hub](https://github.com/markoke/duke_de_finals/actions/workflows/docker-image.yml/badge.svg)](https://github.com/markoke/duke_de_finals/actions/workflows/docker-image.yml)
+[![Build and deploy to production](https://github.com/markoke/duke_de_finals/actions/workflows/azure_deploy_production.yml/badge.svg)](https://github.com/markoke/duke_de_finals/actions/workflows/azure_deploy_production.yml)
 ## About Airqo 
 AirQo empowers African communities and Boston Massachusetts USA with accurate, hyperlocal air quality data, fostering timely actions to combat air pollution. Their commitment to providing precise information contributes to creating healthier environments and sustainable communities throughout Africa. Explore their GitHub repository for insights into impactful projects aimed at building a cleaner and healthier future for all.We utilise the API End point to pull the data and build a predictive model 
 

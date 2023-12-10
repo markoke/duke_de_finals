@@ -1,8 +1,8 @@
-from locust import HttpUser, task, constant
+from locust import HttpUser, task, between
 
 class WebsiteUser(HttpUser):
     host = "http://20.121.88.29:80"
-    wait_time = constant(0)
+    wait_time = between(1, 10)
 
     @task
     def predict(self):
