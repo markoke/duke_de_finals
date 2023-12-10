@@ -4,7 +4,7 @@ import calendar
 from datetime import datetime, timedelta
 import psycopg2
 import os
-
+""" First data dump from AirQloud API to PostgreSQL Azure  """
 airqloud_id = os.environ.get("AIRQLOUD_ID")
 token = os.environ.get("TOKEN")
 
