@@ -38,6 +38,9 @@ async def http_exception_handler(request, exc):
         content={"message": exc.detail}
     )
 
+@app.get("/")
+async def read_item():
+    return {"message": "Welcome to the AirQo API"}
 @app.get("/health")
 async def health_check():
     return {"status": "ok"}
