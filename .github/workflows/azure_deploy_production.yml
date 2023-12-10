@@ -19,4 +19,4 @@ jobs:
           uses: azure/container-apps-deploy-action@v0
           with:
             appSourcePath: ${{ github.workspace }}
-            acrName: deairqo
+            acrName: de-airqo
