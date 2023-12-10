@@ -11,3 +11,11 @@ gunicorn
 scikit-learn==1.3.2
 databricks-connect==14.2.0
 pyspark == 3.5.0
+#devops
+click==8.1.3
+pytest==7.1.3
+#pylint==2.15.3
+#rust based linter
+ruff==0.0.284
+boto3==1.24.87
+locust
