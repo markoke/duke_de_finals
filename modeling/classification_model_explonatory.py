@@ -10,7 +10,10 @@ spark = SparkSession.builder.appName("DeepARForecast").getOrCreate()
 # COMMAND ----------
 
 # Reading the dataset
-data = spark.read.format("csv").option("header", "true").option("inferSchema", "true").load("/FileStore/tables/airqo/final_ml_data.csv")
+data = (spark.read.format("csv").
+        option("header", "true").
+        option("inferSchema", "true").
+        load("/FileStore/tables/airqo/final_ml_data.csv"))
 #data = data.withColumn("timestamp", data["time"].cast("timestamp"))
 
 # COMMAND ----------
@@ -49,7 +52,8 @@ data_pd["air_quality"] = label_encoder_air_quality.fit_transform(data_pd["air_qu
 # COMMAND ----------
 
 from sklearn.model_selection import train_test_split
-X = data_pd[["site_details_district", "site_details_sub_county", "site_details_approximate_latitude", "site_details_approximate_longitude"]]
+X = data_pd[["site_details_district", "site_details_sub_county",
+             "site_details_approximate_latitude", "site_details_approximate_longitude"]]
 y = data_pd["air_quality"]
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
