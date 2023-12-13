@@ -60,6 +60,6 @@ Copilot was my prefered tool of choice for autocompletion and code suggestions o
 Mark Okello 
 Ofosu Osei 
 
-## DEMO VIDEO
+## DEMO VIDEO HERE
 You can watch the demo video [here](https://www.youtube.com/watch?v=rIYLaQIPOY4).
 
