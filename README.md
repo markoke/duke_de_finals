@@ -56,3 +56,10 @@ we opted for Azure Container App as our preferred platform for deploying the app
 ## Utlisation Of AI Tool
 Copilot was my prefered tool of choice for autocompletion and code suggestions on my Pycharm IDE. 
 
+## Team Members
+Mark Okello 
+Ofosu Osei 
+
+## DEMO VIDEO
+You can watch the demo video [here](https://www.youtube.com/watch?v=rIYLaQIPOY4).
+
